@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap CSS - Uygulama Alanı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-arrow-left"></i> Eğitime Dön</a>
+            <span class="navbar-text text-white">
+                <i class="bi bi-pencil-square"></i> Uygulama Alanı
+            </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="display-4 text-center my-5">🎯 Bootstrap CSS Uygulamaları</h1>
+        
+        <!-- Challenge 1: Renkler -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 1: Renkli Kartlar</h2>
+                <p>Aşağıdaki boş alana 4 farklı renkte kart oluşturun. Her kart farklı bir bg- sınıfı kullanmalı.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> bg-primary, bg-success, bg-danger, bg-warning, text-white, p-3, m-2</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="8" id="code1" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<div class="bg-primary text-white p-3 m-2">
+    Primary Kart
+</div></textarea>
+            <button class="btn btn-success" onclick="runCode1()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode1()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result1" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 2: Grid System -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 2: Responsive Grid</h2>
+                <p>3 sütunlu bir grid oluşturun. Mobile'da 12, tablet'te 6, desktop'ta 4 genişliğinde olmalı.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> row, col-12, col-md-6, col-lg-4, bg-info, text-white, p-3</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="10" id="code2" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="bg-info text-white p-3">Sütun 1</div>
+    </div>
+</div></textarea>
+            <button class="btn btn-success" onclick="runCode2()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode2()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result2" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 3: Butonlar -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 3: Buton Grubu</h2>
+                <p>Farklı boyut ve stillerde 6 buton oluşturun. İkonlar ekleyin.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> btn, btn-primary, btn-outline-success, btn-lg, btn-sm, bi-*</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="8" id="code3" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<button class="btn btn-primary btn-lg m-1">
+    <i class="bi bi-star-fill"></i> Büyük Buton
+</button></textarea>
+            <button class="btn btn-success" onclick="runCode3()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode3()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result3" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 4: Flexbox -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 4: Flexbox Layout</h2>
+                <p>d-flex kullanarak 3 kutu oluşturun. Kutular aralarında eşit boşluk olacak şekilde dağılsın (justify-content-between).</p>
+                <p><strong>Kullanılacak sınıflar:</strong> d-flex, justify-content-between, bg-primary, text-white, p-3</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="8" id="code4" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<div class="d-flex justify-content-between">
+    <div class="bg-primary text-white p-3">Kutu 1</div>
+</div></textarea>
+            <button class="btn btn-success" onclick="runCode4()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode4()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result4" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 5: Kart Tasarımı -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 5: Profesyonel Kart</h2>
+                <p>Bir ürün kartı tasarlayın. Resim, başlık, açıklama ve buton içermeli.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> card, card-img-top, card-body, card-title, card-text, btn</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="12" id="code5" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<div class="card" style="width: 18rem;">
+    <img src="https://via.placeholder.com/300x200/0d6efd/ffffff?text=Ürün" class="card-img-top" alt="Ürün">
+    <div class="card-body">
+        <h5 class="card-title">Ürün Adı</h5>
+        <p class="card-text">Ürün açıklaması buraya gelecek.</p>
+        <a href="#" class="btn btn-primary">Satın Al</a>
+    </div>
+</div></textarea>
+            <button class="btn btn-success" onclick="runCode5()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode5()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result5" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 6: Form Tasarımı -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 6: İletişim Formu</h2>
+                <p>Email, mesaj alanı ve gönder butonu içeren bir form oluşturun.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> mb-3, form-label, form-control, btn</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="12" id="code6" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<form>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="email@ornek.com">
+    </div>
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form></textarea>
+            <button class="btn btn-success" onclick="runCode6()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode6()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result6" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 7: Spacing -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 7: Spacing Pratiği</h2>
+                <p>4 kutu oluşturun. Her kutunun farklı margin ve padding değerleri olsun.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> m-*, p-*, mt-*, mb-*, mx-*, my-*, bg-*</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="10" id="code7" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<div class="bg-primary text-white p-3 m-2">m-2 p-3</div>
+<div class="bg-success text-white p-4 mt-5">mt-5 p-4</div></textarea>
+            <button class="btn btn-success" onclick="runCode7()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode7()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result7" class="result-area"></div>
+        </div>
+
+        <!-- Challenge 8: Utilities -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-trophy"></i> Görev 8: Utilities Kombinasyonu</h2>
+                <p>Border, shadow, rounded ve width sınıflarını kullanarak 3 farklı kutu tasarlayın.</p>
+                <p><strong>Kullanılacak sınıflar:</strong> border, rounded, shadow, w-*, bg-*, p-*</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="10" id="code8" placeholder="HTML kodunuzu buraya yazın...">
+<!-- Örnek: -->
+<div class="border rounded shadow p-3 mb-3 w-50">
+    Border + Rounded + Shadow
+</div></textarea>
+            <button class="btn btn-success" onclick="runCode8()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCode8()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="result8" class="result-area"></div>
+        </div>
+
+        <!-- Serbest Çalışma Alanı -->
+        <div class="demo-section">
+            <div class="challenge-box">
+                <h2><i class="bi bi-stars"></i> Serbest Çalışma Alanı</h2>
+                <p>Öğrendiklerinizi kullanarak istediğiniz tasarımı yapın!</p>
+            </div>
+            
+            <h4>Kodunuzu Buraya Yazın:</h4>
+            <textarea class="form-control mb-3" rows="15" id="codeFree" placeholder="Burası tamamen size ait! İstediğiniz Bootstrap kodunu yazabilirsiniz...">
+<!-- Buraya istediğiniz kodu yazın! --></textarea>
+            <button class="btn btn-success" onclick="runCodeFree()"><i class="bi bi-play-fill"></i> Çalıştır</button>
+            <button class="btn btn-secondary" onclick="clearCodeFree()"><i class="bi bi-x"></i> Temizle</button>
+            
+            <h4 class="mt-4">Sonuç:</h4>
+            <div id="resultFree" class="result-area"></div>
+        </div>
+
+        <div class="text-center my-5">
+            <a href="index.html" class="btn btn-primary btn-lg">
+                <i class="bi bi-arrow-left"></i> Eğitime Geri Dön
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function runCode1() {
+            const code = document.getElementById('code1').value;
+            document.getElementById('result1').innerHTML = code;
+        }
+        function clearCode1() {
+            document.getElementById('code1').value = '';
+            document.getElementById('result1').innerHTML = '';
+        }
+
+        function runCode2() {
+            const code = document.getElementById('code2').value;
+            document.getElementById('result2').innerHTML = code;
+        }
+        function clearCode2() {
+            document.getElementById('code2').value = '';
+            document.getElementById('result2').innerHTML = '';
+        }
+
+        function runCode3() {
+            const code = document.getElementById('code3').value;
+            document.getElementById('result3').innerHTML = code;
+        }
+        function clearCode3() {
+            document.getElementById('code3').value = '';
+            document.getElementById('result3').innerHTML = '';
+        }
+
+        function runCode4() {
+            const code = document.getElementById('code4').value;
+            document.getElementById('result4').innerHTML = code;
+        }
+        function clearCode4() {
+            document.getElementById('code4').value = '';
+            document.getElementById('result4').innerHTML = '';
+        }
+
+        function runCode5() {
+            const code = document.getElementById('code5').value;
+            document.getElementById('result5').innerHTML = code;
+        }
+        function clearCode5() {
+            document.getElementById('code5').value = '';
+            document.getElementById('result5').innerHTML = '';
+        }
+
+        function runCode6() {
+            const code = document.getElementById('code6').value;
+            document.getElementById('result6').innerHTML = code;
+        }
+        function clearCode6() {
+            document.getElementById('code6').value = '';
+            document.getElementById('result6').innerHTML = '';
+        }
+
+        function runCode7() {
+            const code = document.getElementById('code7').value;
+            document.getElementById('result7').innerHTML = code;
+        }
+        function clearCode7() {
+            document.getElementById('code7').value = '';
+            document.getElementById('result7').innerHTML = '';
+        }
+
+        function runCode8() {
+            const code = document.getElementById('code8').value;
+            document.getElementById('result8').innerHTML = code;
+        }
+        function clearCode8() {
+            document.getElementById('code8').value = '';
+            document.getElementById('result8').innerHTML = '';
+        }
+
+        function runCodeFree() {
+            const code = document.getElementById('codeFree').value;
+            document.getElementById('resultFree').innerHTML = code;
+        }
+        function clearCodeFree() {
+            document.getElementById('codeFree').value = '';
+            document.getElementById('resultFree').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

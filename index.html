@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap CSS Eğitimi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i> Bootstrap CSS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#giris">Giriş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#renkler">Renkler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tipografi">Tipografi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#spacing">Spacing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#grid">Grid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#flexbox">Flexbox</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#butonlar">Butonlar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="uygulama.html"><span class="badge bg-warning text-dark">🎯 Uygulama</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="giris">
+            <h1 class="display-4 text-center my-5" style="color: black;">Bootstrap CSS Eğitimi</h1>
+            <div class="demo-section">
+                <h2><i class="bi bi-info-circle"></i> Bootstrap Nedir?</h2>
+                <p class="lead">Bootstrap, web siteleri için en popüler CSS framework'üdür. Responsive ve mobile-first tasarımlar oluşturmanızı sağlar.</p>
+                <div class="info-card">
+                    <h5><i class="bi bi-lightbulb"></i> Avantajları:</h5>
+                    <ul>
+                        <li><strong>Hızlı:</strong> Hazır bileşenler</li>
+                        <li><strong>Responsive:</strong> Tüm cihazlarda uyumlu</li>
+                        <li><strong>Özelleştirilebilir:</strong> Kendi tasarımınızı uygulayın</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="renkler">
+            <h2 class="section-title"><i class="bi bi-palette"></i> 1. Renkler</h2>
+            <div class="demo-section">
+                <h3>Arka Plan Renkleri (bg-*)</h3>
+                <div class="row g-2">
+                    <div class="col-md-3"><div class="color-box bg-primary">bg-primary</div></div>
+                    <div class="col-md-3"><div class="color-box bg-secondary">bg-secondary</div></div>
+                    <div class="col-md-3"><div class="color-box bg-success">bg-success</div></div>
+                    <div class="col-md-3"><div class="color-box bg-danger">bg-danger</div></div>
+                    <div class="col-md-3"><div class="color-box bg-warning text-dark">bg-warning</div></div>
+                    <div class="col-md-3"><div class="color-box bg-info text-dark">bg-info</div></div>
+                    <div class="col-md-3"><div class="color-box bg-light text-dark">bg-light</div></div>
+                    <div class="col-md-3"><div class="color-box bg-dark">bg-dark</div></div>
+                </div>
+                <h3 class="mt-4">Metin Renkleri (text-*)</h3>
+                <p class="text-primary fs-5">text-primary</p>
+                <p class="text-success fs-5">text-success</p>
+                <p class="text-danger fs-5">text-danger</p>
+                <p class="text-muted fs-5">text-muted</p>
+                <div class="code-preview">&lt;div class="bg-primary text-white"&gt;Primary&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section id="tipografi">
+            <h2 class="section-title"><i class="bi bi-fonts"></i> 2. Tipografi</h2>
+            <div class="demo-section">
+                <h3>Başlıklar</h3>
+                <h1>h1 Başlık (2.5rem)</h1>
+                <h2>h2 Başlık (2rem)</h2>
+                <h3>h3 Başlık (1.75rem)</h3>
+                <h3 class="mt-4">Display Başlıkları</h3>
+                <h1 class="display-1">Display 1</h1>
+                <h1 class="display-4">Display 4</h1>
+                <h3 class="mt-4">Metin Stilleri</h3>
+                <p class="lead">Lead paragraf</p>
+                <p><strong>Kalın</strong>, <em>İtalik</em>, <mark>Vurgulu</mark></p>
+                <p class="text-uppercase">Büyük harf</p>
+                <p class="text-capitalize">her kelime büyük</p>
+                <h3 class="mt-4">Hizalama</h3>
+                <p class="text-start">Sola</p>
+                <p class="text-center">Ortaya</p>
+                <p class="text-end">Sağa</p>
+                <h3 class="mt-4">Font Boyutları</h3>
+                <p class="fs-1">fs-1 (en büyük)</p>
+                <p class="fs-3">fs-3</p>
+                <p class="fs-6">fs-6 (en küçük)</p>
+                <div class="code-preview">&lt;p class="lead text-center"&gt;Metin&lt;/p&gt;</div>
+            </div>
+        </section>
+
+        <section id="spacing">
+            <h2 class="section-title"><i class="bi bi-arrows-expand"></i> 3. Spacing</h2>
+            <div class="demo-section">
+                <h3>Margin ve Padding</h3>
+                <div class="info-card">
+                    <h5>Syntax: {property}{sides}-{size}</h5>
+                    <ul>
+                        <li><strong>property:</strong> m (margin), p (padding)</li>
+                        <li><strong>sides:</strong> t, b, s, e, x, y, boş</li>
+                        <li><strong>size:</strong> 0-5, auto</li>
+                    </ul>
+                </div>
+                <h4>Örnekler</h4>
+                <div class="spacing-demo m-3">m-3 (tüm yönler 16px)</div>
+                <div class="spacing-demo mt-4">mt-4 (top 24px)</div>
+                <div class="spacing-demo mx-5">mx-5 (horizontal 48px)</div>
+                <div class="spacing-demo p-3">p-3 (padding 16px)</div>
+                <div class="code-preview">&lt;div class="m-3 p-4"&gt;Margin 3, Padding 4&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section id="grid">
+            <h2 class="section-title"><i class="bi bi-grid-3x3"></i> 4. Grid System</h2>
+            <div class="demo-section">
+                <h3>12 Sütunlu Grid</h3>
+                <div class="info-card">
+                    <h5>Breakpoints:</h5>
+                    <p><strong>xs</strong> &lt;576px | <strong>sm</strong> ≥576px | <strong>md</strong> ≥768px | <strong>lg</strong> ≥992px | <strong>xl</strong> ≥1200px</p>
+                </div>
+                <h4>Temel Grid</h4>
+                <div class="row mb-2">
+                    <div class="col bg-primary text-white p-2 border">col</div>
+                    <div class="col bg-secondary text-white p-2 border">col</div>
+                    <div class="col bg-primary text-white p-2 border">col</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4 bg-success text-white p-2 border">col-4</div>
+                    <div class="col-8 bg-info text-white p-2 border">col-8</div>
+                </div>
+                <h4 class="mt-4">Responsive Grid</h4>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="bg-primary text-white p-3 text-center">12/6/4</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="bg-secondary text-white p-3 text-center">12/6/4</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="bg-success text-white p-3 text-center">12/6/4</div>
+                    </div>
+                </div>
+                <div class="code-preview">&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;Sütun&lt;/div&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section id="flexbox">
+            <h2 class="section-title"><i class="bi bi-arrows-angle-expand"></i> 5. Flexbox</h2>
+            <div class="demo-section">
+                <h3>Justify Content</h3>
+                <div class="d-flex justify-content-start bg-light p-2 mb-2 border">
+                    <div class="bg-primary text-white p-2">start</div>
+                </div>
+                <div class="d-flex justify-content-center bg-light p-2 mb-2 border">
+                    <div class="bg-success text-white p-2">center</div>
+                </div>
+                <div class="d-flex justify-content-end bg-light p-2 mb-2 border">
+                    <div class="bg-danger text-white p-2">end</div>
+                </div>
+                <div class="d-flex justify-content-between bg-light p-2 mb-2 border">
+                    <div class="bg-info text-white p-2">between</div>
+                    <div class="bg-info text-white p-2">between</div>
+                </div>
+                <h3 class="mt-4">Align Items</h3>
+                <div class="d-flex align-items-center bg-light p-2 border" style="height: 100px;">
+                    <div class="bg-success text-white p-2">align-items-center</div>
+                </div>
+                <div class="code-preview">&lt;div class="d-flex justify-content-center"&gt;...&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section id="butonlar">
+            <h2 class="section-title"><i class="bi bi-hand-index"></i> 6. Butonlar</h2>
+            <div class="demo-section">
+                <h3>Buton Stilleri</h3>
+                <button class="btn btn-primary m-1">Primary</button>
+                <button class="btn btn-secondary m-1">Secondary</button>
+                <button class="btn btn-success m-1">Success</button>
+                <button class="btn btn-danger m-1">Danger</button>
+                <h3 class="mt-4">Outline</h3>
+                <button class="btn btn-outline-primary m-1">Primary</button>
+                <button class="btn btn-outline-success m-1">Success</button>
+                <h3 class="mt-4">Boyutlar</h3>
+                <button class="btn btn-primary btn-lg m-1">Büyük</button>
+                <button class="btn btn-primary m-1">Normal</button>
+                <button class="btn btn-primary btn-sm m-1">Küçük</button>
+                <h3 class="mt-4">İkonlu</h3>
+                <button class="btn btn-success m-1"><i class="bi bi-check"></i> Onayla</button>
+                <button class="btn btn-danger m-1"><i class="bi bi-trash"></i> Sil</button>
+                <div class="code-preview">&lt;button class="btn btn-primary"&gt;Buton&lt;/button&gt;</div>
+            </div>
+        </section>
+
+        <section id="utilities">
+            <h2 class="section-title"><i class="bi bi-tools"></i> 7. Utilities</h2>
+            <div class="demo-section">
+                <h3>Display</h3>
+                <div class="d-block bg-primary text-white p-2 mb-2">d-block</div>
+                <div class="d-flex bg-success text-white p-2 mb-2">d-flex</div>
+                <div class="d-none">d-none (görünmez)</div>
+                <h3 class="mt-4">Border & Shadow</h3>
+                <div class="border p-3 mb-2">border</div>
+                <div class="border border-primary border-3 p-3 mb-2">border-primary border-3</div>
+                <div class="rounded border p-3 mb-2">rounded</div>
+                <div class="shadow p-3 mb-3 bg-white">shadow</div>
+                <h3 class="mt-4">Width</h3>
+                <div class="w-25 bg-primary text-white p-2 mb-2">w-25</div>
+                <div class="w-50 bg-success text-white p-2 mb-2">w-50</div>
+                <div class="w-100 bg-danger text-white p-2 mb-2">w-100</div>
+                <h3 class="mt-4">Position</h3>
+                <div class="position-relative bg-light p-4" style="height: 150px;">
+                    <div class="position-absolute top-0 start-0 bg-primary text-white p-2">top-start</div>
+                    <div class="position-absolute top-0 end-0 bg-success text-white p-2">top-end</div>
+                    <div class="position-absolute bottom-0 start-0 bg-warning text-dark p-2">bottom-start</div>
+                </div>
+                <div class="code-preview">&lt;div class="border rounded shadow w-50"&gt;...&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section id="diger" class="mb-5">
+            <h2 class="section-title"><i class="bi bi-plus-circle"></i> 8. Diğer Konular</h2>
+            <div class="demo-section">
+                <h3>Kartlar</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kart Başlığı</h5>
+                        <p class="card-text">Kart içeriği</p>
+                        <a href="#" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+                <h3>Formlar</h3>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="email@ornek.com">
+                </div>
+                <h3>Tablolar</h3>
+                <table class="table table-striped">
+                    <thead><tr><th>Başlık 1</th><th>Başlık 2</th></tr></thead>
+                    <tbody><tr><td>Veri 1</td><td>Veri 2</td></tr></tbody>
+                </table>
+                <h3>Alerts</h3>
+                <div class="alert alert-success">Başarılı!</div>
+                <div class="alert alert-danger">Hata!</div>
+                <h3>Badges</h3>
+                <span class="badge bg-primary">Primary</span>
+                <span class="badge bg-success">Success</span>
+            </div>
+        </section>
+
+        <div class="text-center my-5">
+            <a href="uygulama.html" class="btn btn-warning btn-lg">
+                <i class="bi bi-pencil-square"></i> Şimdi Uygulama Yap!
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
